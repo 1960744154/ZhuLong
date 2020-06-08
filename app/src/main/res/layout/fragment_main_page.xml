@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lhr.zhulong.fragment.MainPageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        >
+
+        <com.youth.banner.Banner
+            android:id="@+id/main_page_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/main_page_banner"
+            >
+            <TextView
+                android:id="@+id/tv_shortcuts_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_shortcuts_1"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="训练营"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/fl_shortcuts_2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/fl_shortcuts_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_shortcuts_1"
+                app:layout_constraintRight_toLeftOf="@id/tv_shortcuts_3"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_shortcuts_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_shortcuts_2"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="精品课"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_shortcuts_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_shortcuts_6"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="图片库"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_shortcuts_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_shortcuts_3"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="论坛"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fl_shortcuts_2"
+                app:layout_constraintRight_toLeftOf="@id/tv_shortcuts_4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_shortcuts_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_shortcuts_4"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="问答"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_shortcuts_3"
+                app:layout_constraintRight_toLeftOf="@id/tv_shortcuts_5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_shortcuts_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_shortcuts_5"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="礼品"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_shortcuts_4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4da0a0a0"
+                app:layout_constraintTop_toBottomOf="@+id/tv_shortcuts_5"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/zhibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/constraint"
+            android:layout_margin="@dimen/dp_20"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+            <View
+                android:id="@+id/view_red"
+                android:layout_width="2dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/color_red"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
+
+            <android.widget.TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/text_live_area"
+                android:textColor="@color/fontColor333"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/view_red"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.widget.TextView
+                android:id="@+id/btn_all_lives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableEnd="@drawable/ic_arrow_right_gray"
+                android:drawableRight="@drawable/ic_arrow_right_gray"
+                android:drawablePadding="6dp"
+                android:padding="5dp"
+                android:text="全部直播"
+                android:textColor="@color/fontColorGray"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintBottom_toBottomOf="@id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/live_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <View
+                android:id="@+id/live_divider"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/vipDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/live_group" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/views"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:background="@color/question"
+            app:layout_constraintTop_toBottomOf="@+id/zhibo"
+            />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/main_page_smart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/views"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_page_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
